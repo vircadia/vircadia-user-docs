@@ -47,11 +47,11 @@ Internet.
 
 2.  Run the following command to download the server package:
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspwget [https://cdn.vircadia.com/dist/domain-server/ubuntu/vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb](https://cdn.vircadia.com/dist/domain-server/ubuntu/vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb)
+  > wget [https://cdn.vircadia.com/dist/domain-server/ubuntu/vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb](https://cdn.vircadia.com/dist/domain-server/ubuntu/vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb)
 3.  Then run this command to update the package index and install the
     server:
-
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp sudo apt-get update && sudo apt-get install 
+    
+  > sudo apt-get update && sudo apt-get install 
 
 4.  Go to *http://[IP address of your server]:40100/* in your web
     browser and complete the wizard to set up your domain.
