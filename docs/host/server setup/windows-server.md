@@ -5,17 +5,14 @@ title: Host a Domain Locally on Windows
 A local server lets you use your own computer to host your virtual
 domain on the metaverse.
 
-:small_red_triangle_down: Warning
-```diff
-- Hosting any kind of server from your home means exposing your network to
-- the world. Therefore, we recommend using local servers only for private
-- events and small gatherings. If you want to host a public domain or
-- advertise your domain in the Explore app, we recommend using a cloud hosting provider such as DigitalOcean.
-```
-###### On this page: ######
-  - [Set Up Your Server](#set-up-your-server)
-  - [Creat a Domain](#create-a-domain)
-  - [Activate Your Domain](#activate-your-domain)
+:::caution
+
+Hosting any kind of server from your home means exposing your network to
+the world. Therefore, we recommend using local servers only for private
+events and small gatherings. If you want to host a public domain or
+advertise your domain in the Explore app, we recommend using a cloud hosting provider such as DigitalOcean.
+:::
+
 
 ## Set Up Your Server
 
@@ -63,9 +60,10 @@ To set up a domain and host it on your local server:
     >     app.
     >
     >
+
     >:small_blue_diamond: Note:
     Learn [how to configure a Place name](../configure-settings/place-setting)
-    >
+    
     >
     >
     > -   **Step 3: Set up basic permissions**: By default, anyone
@@ -96,15 +94,14 @@ This will assign your domain with a permanent, unique identification
 code that registers it in the metaverse. Your domain will now be
 accessible through the Place name or your server\'s IP address.
 
-:small_blue_diamond: Note:
+:::note
 
 If you did not assign a Place name, the only way to access your domain
 is by your server's IP address. However, note that when your IP address
-changes, so too will the address of your domain. Therefore, if you are
-hosting your domain on a laptop or on a computer with a frequently
-changing IP address, we strongly recommend that you configure a Place
-name for your domain. Learn
-[how to configure a Place name](../configure-settings/place-setting)
+changes, so too will the address of your domain.
+
+:::
+
 
 Now, your domain is officially part of the expanding metaverse!
 

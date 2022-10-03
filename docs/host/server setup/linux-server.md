@@ -1,13 +1,5 @@
 # Host a Domain from a Local or Cloud Linux Server
 
-###### On This Page: ######
-- [installation](#installation)
-- [Configuration](#configuration) 
-- [Services](#services)
-- [multiple domains](#multiple-domains)
-- [Deleting A vircadia server](#deleting-a-vircadia-server)
-- [Deleting a Domain from a Multiple Domain Installation](#deleting-a-domain-from-a-multiple-domain-installation)
-- [Legacy Services](#legacy-services)
 
 The Vircadia packages can help you get your own domain up and running quickly.
 

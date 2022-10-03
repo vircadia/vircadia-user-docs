@@ -1,11 +1,6 @@
 
 # Hosting Quick Start
 
-###### On This Page: ######
-- [Notice: port Forwarding](#notice-port-forwarding) 
-- [Windows](#windows)
-- [Ubuntu](#ubuntu-1804-linux-deb)
-
 ## Notice: Port Forwarding
 
 There are two ways to make a domain accessible from the outside
@@ -22,7 +17,6 @@ Internet.
     > -   40102 : (udp) main connection for clients
 
 ## Windows
-
 
 1.  Download Vircadia (full, not Interface only).
 2.  Use the [Custom]{.title-ref} install option and ensure that both the
