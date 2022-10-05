@@ -1,14 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 slug: /
 ---
 
 # Introduction
 
-...
+Vircadia is an open source metaverse platform and ecosystem, available on virtually every device through your web browser.
 
-## License
-
-All of Vircadia's primary components are released under an [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) or compatible license.
-
-However, tools, supporting components, and third party projects that are not vital to the normal operation of the ecosystem may be distributed under a different license.
+You can create your own or visit, experience, and live in worlds made by others!
