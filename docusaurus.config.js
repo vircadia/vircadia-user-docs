@@ -9,7 +9,7 @@ const config = {
   title: 'Vircadia User Docs',
   tagline: 'Vircadia User Documentation',
   url: 'https://docs.vircadia.com',
-  baseUrl: '/',
+  baseUrl: '/staging/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
