@@ -5,4 +5,4 @@ slug: /create
 
 # Creating with Vircadia
 
-...
+Coming soon.

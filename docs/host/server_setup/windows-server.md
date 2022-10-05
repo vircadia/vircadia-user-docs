@@ -25,9 +25,9 @@ with:
 Keep in mind that as you add more visitors to your domain, the
 demand on your resources will increase. Therefore if you wish to invite
 a large group (over 15 visitors) or create a complex content set, we
-encourage you to increase your memory and network bandwidth.
+encourage you to increase your CPU resources and network bandwidth.
 
-To host a domain on Windows, you must be running Vircadia's Developer [Client + Server](https://vircadia.com/download/#windows).
+To host a domain on Windows, you must be running [Vircadia's Developer Client + Server](https://vircadia.com/download/#windows).
 
 ## Create a Domain
 
