@@ -1,3 +1,6 @@
+---
+sidebar_position: 0
+---
 
 # Hosting Quick Start
 
@@ -12,8 +15,9 @@ Internet.
 2.  Alternatively, you can manually open the following ports on your
     router and firewall:
 
-    > 40100 : (tcp) administration web portal
-    > 40102 : (udp) main connection for clients
+    `40100 : (tcp) administration web portal`
+
+    `40102 : (udp) main connection for clients`
 
 ## Windows
 

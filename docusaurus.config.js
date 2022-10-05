@@ -45,7 +45,7 @@ const config = {
         title: 'User Docs',
         logo: {
             alt: 'Vircadia',
-            src: 'img/vircadia-banner.svg',
+            src: 'img/vircadia-banner.png',
         },
         items: [
             {
@@ -55,7 +55,7 @@ const config = {
                 label: 'Introduction',
             },
             {
-                href: 'https://github.com/vircadia/vircadia-dev-docs',
+                href: 'https://github.com/vircadia/vircadia-user-docs',
                 label: 'Git',
                 position: 'right',
             },

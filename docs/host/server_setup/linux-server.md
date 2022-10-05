@@ -1,6 +1,5 @@
 # Host a Domain from a Local or Cloud Linux Server
 
-
 The Vircadia packages can help you get your own domain up and running quickly.
 
 ## Installation
@@ -35,7 +34,7 @@ If you do not see your distribution listed here, you may compile your own server
 
 The installation packages will create a domain at the default port location and configure a service to keep it running on that machine.
 
-For the list of network ports that you will need to open and manage, see [here](../configure-settings/network-settings).
+For the list of network ports that you will need to open and manage, see [here](../network-settings).
 
 Connect a web browser to the server at port 40100. (If you are on the machine that the server is running on, this would be http://localhost:40100) Complete the initial setup wizard and you should have a functioning domain.
 
