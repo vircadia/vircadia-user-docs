@@ -55,11 +55,11 @@ All content is stored under <code>/var/lib/vircadia/default</code>. All files un
 ## Services
 
 The installation packages setup the following systemd services to manage the Vircadia domain:
-- **vircadia-domain-server@default.service**: Manages the core domain server
-- **vircadia-assignment-client@default.service**: Spawns and manages the assignment clients
-- **vircadia-server@default.target**: Controls startup and shutdown of the above services
+- **vircadia-domain-server<span>@</span>default.service**: Manages the core domain server
+- **vircadia-assignment-client<span>@</span>default.service**: Spawns and manages the assignment clients
+- **vircadia-server<span>@</span>default.target**: Controls startup and shutdown of the above services
 
-The <code>vircadia-server@default.target</code> service is the only one that is set to auto-start. Starting or stopping it will bring the other two services down.
+The <code>vircadia-server<span>@</span>default.target</code> service is the only one that is set to auto-start. Starting or stopping it will bring the other two services down.
 
 The first two services log a large amount of data to their service journal. Checking their logs (via <code>systemctl status</code>) is a good way to ensure they are operating properly.
 
