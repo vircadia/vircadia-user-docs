@@ -1,5 +1,6 @@
 ---
 title: Host a Domain Locally on Windows
+sidebar_position: 1
 ---
 
 A local server lets you use your own computer to host your virtual
