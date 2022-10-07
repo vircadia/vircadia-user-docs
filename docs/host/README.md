@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-slug: /create
+sidebar_position: 1
+slug: /host
 ---
 
 # Creating with Vircadia
