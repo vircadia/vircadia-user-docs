@@ -7,7 +7,7 @@ slug: /create
 
 Coming soon.
 
-# Hosting provider
+# Asset Hosting
 
 Configuring CORS on your hosting provider enables resources to be pulled from outside sources.
 
