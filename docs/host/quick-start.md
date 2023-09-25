@@ -19,24 +19,7 @@ Internet.
 
     `40102 : (udp) main connection for clients`
 
-## Windows
-
-1.  Download the Vircadia Developer Client.
-2.  Use the **Custom** install option and ensure that both the
-    **Vircadia Interface** and **Vircadia Server**
-    options are checked. Vircadia Server is the Domain server.
-
-![image](_images/full-install-components.png)
-
-3.  In your start menu, search for and run **Vircadia Server**
-4.  Go to `http://localhost:40100/` in your web browser and complete the
-    wizard to set up your domain. If the server is on a different
-    machine, then replace 'localhost' with its IP address.
-5.  In your Vircadia Interface, open the *Explore* app and
-    enter *localhost* (or the server's IP address) to get
-    there.
-
-## Ubuntu 18.04 Linux (.deb)
+## Ubuntu 20.04 Linux (.deb)
 
 
 1.  Open your terminal.
@@ -44,16 +27,16 @@ Internet.
 2.  Run the following command to download the server package:
 
     ```sh
-    wget https://cdn.vircadia.com/dist/domain-server/ubuntu/vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb
+    wget https://github.com/vircadia/vircadia-native-core/releases/download/2022.1.2/vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
     ```
 3.  Then run this command to update the package index and install the server:
     
     ```sh
-    sudo apt-get update && sudo apt-get install ./vircadia-server_2022.1.1-selene-20220303-beb7bd4-0ubuntu1-1_amd64.deb
+    sudo apt-get update && sudo apt-get install ./vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
     ```
 
 4.  Go to *http://[IP address of your server]:40100/* in your web
     browser and complete the wizard to set up your domain.
 
-5.  In your Vircadia Interface, open the *Explore* app and
+5.  In your Vircadia web interface, open the *Explore* app and
     enter your server's IP address to get there.
