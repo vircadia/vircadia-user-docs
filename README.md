@@ -1,6 +1,6 @@
 # Vircadia User Documentation
 
-User documentation for the Vircadia open source metaverse ecosystem built using [Docusaurus 2](https://docusaurus.io/).
+User documentation for the Vircadia open source metaverse ecosystem.
 
 ### Installation
 
