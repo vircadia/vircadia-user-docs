@@ -48,7 +48,14 @@ The installation packages setup the following systemd services to manage the Vir
 
 The <code>vircadia-server<span>@</span>default.target</code> service is the only one that is set to auto-start. Starting or stopping it will bring the other two services down.
 
-The first two services log a large amount of data to their service journal. Checking their logs (via <code>systemctl status</code>) is a good way to ensure they are operating properly.
+## Logs
+
+Logs can be accessed by running the following commands:
+
+* Domain server: ```journalctl -u vircadia-domain-server@default.service``` 
+* Assignment client: ```journalctl -u vircadia-assignment-client@default.service```
+
+The domain server and assignment client services log a large amount of data to their service journals. Checking their logs (via <code>systemctl status</code>) is a good way to ensure they are operating properly.
 
 ## Multiple Domains
 
