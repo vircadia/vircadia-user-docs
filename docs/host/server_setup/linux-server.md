@@ -8,14 +8,18 @@ You can run these same commands on an existing Vircadia domain to upgrade it if 
 
 ### Ubuntu Server 20.04 LTS (2022.1.1 Selene)
 
+#### Download
 ```sh
 wget https://github.com/vircadia/vircadia-native-core/releases/download/2022.1.2/vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
+```
+#### Update & Install
+```sh
 sudo apt-get update && sudo apt-get install ./vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
 ```
 
 ### Unlisted Distribution
 
-If you do not see your distribution listed here, you may compile your own server from source with the [Linux build guide](https://github.com/vircadia/vircadia/blob/master/BUILD_LINUX.md).
+If you do not see your distribution listed here, you may compile your own server from source with the [Linux build guide](https://github.com/vircadia/vircadia-native-core/blob/master/BUILD_LINUX.md).
 
 ## Configuration
 
@@ -52,8 +56,14 @@ The <code>vircadia-server<span>@</span>default.target</code> service is the only
 
 Logs can be accessed by running the following commands:
 
-* Domain server: ```journalctl -u vircadia-domain-server@default.service``` 
-* Assignment client: ```journalctl -u vircadia-assignment-client@default.service```
+* Domain server: 
+  ```sh
+  journalctl -u vircadia-domain-server@default.service
+  ``` 
+* Assignment client: 
+  ```sh
+  journalctl -u vircadia-assignment-client@default.service
+  ```
 
 The domain server and assignment client services log a large amount of data to their service journals. Checking their logs (via <code>systemctl status</code>) is a good way to ensure they are operating properly.
 
