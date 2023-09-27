@@ -2,7 +2,7 @@
 
 The Vircadia packages can help you get your own domain up and running quickly.
 
-## Installation
+## Installation / Upgrading
 
 You can run these same commands on an existing Vircadia domain to upgrade it if the original domain was installed using the package. Packages are currently available for the following distributions:
 
@@ -12,7 +12,7 @@ You can run these same commands on an existing Vircadia domain to upgrade it if 
 ```sh
 wget https://github.com/vircadia/vircadia-native-core/releases/download/2022.1.2/vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
 ```
-#### Update & Install
+#### Update System & Install
 ```sh
 sudo apt-get update && sudo apt-get install ./vircadia-server_1750-20230922-50b2485-0ubuntu1-1_amd64.deb
 ```
