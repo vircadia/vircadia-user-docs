@@ -5,26 +5,52 @@ slug: /create
 
 # Creating with Vircadia
 
-For the time being, content/models are created externally in software packages like [Blender](https://www.blender.org/) and positioned in 3d space using the Vircadia Native Client.
+For the time being, content/models are created externally in software packages like [Blender](https://www.blender.org/) and positioned in 3d space using the Vircadia Native Client. Found [here](https://github.com/vircadia/vircadia-native-core/releases/download/2022.1.2/Vircadia-2022.1.2-6791899-Selene.exe)
+Note: Objects using draco compression will not be rendered in the natve client but can still be positioned by selecting them in the entity list.
 
 # Asset Creation
 
-Vircadia officially supports glTF 2.0 models.
-
 For best performance:
 
-* Use less materials
-* Use less polygons
-* Combine model clusters to lower the object count
-  
-  
+* Use less materials by combining textures when applicable
+* Combine model clusters to lower the mesh count
+* Consider using instances (linked duplicates in Blender) for repeat assets placed far from each other, but keep in mind a large number of objects in a scene will burden the CPU.
+* Use multiple levels of detail (LOD) to lower polygon count
 
-Take advantage of LOD by appending the following suffixes to your meshes' name:
+Note: When using instances and LOD together, be sure to duplicate only LOD0 when placing throughout the scene, otherwise additional meshes will be created and stacked.
+
+### GLTF TYPES
+
+Vircadia officially supports [glTF 2.0 models](https://www.khronos.org/gltf/).
+
+- **Binary (.glb)**: A single file making it efficient and easy for sharing, with one network request needed.
+
+- **Separate (.gltf, .bin, + textures)**: Multiple files requiring multiple network requests, useful if several models share resources like textures.
+
+- **Embedded (.gltf)**: One file with a Data URI payload, making it easy to edit manually, but increases file size by 20-30%. This format is not typically preferred over the Binary format.
+
+For most puproses a ".glb"" file is adequate, however if you wish to re-use textures and materials in other projects and enviroments  you may decide to use the second option, however this is more complicated.
+
+### LOD
+
+Take advantage of LOD (by appending the following suffixes to your meshes' name:
 
 * _LOD0 *required, highest detail*
 * _LOD1
 * _LOD2
 * _LOD3
+* _LOD4
+
+LODs are a great way to lower the onscreen polygon count as objects get farther from the camera.  This is done by switching to simplified models at a specified distance or size. While this does increase the filesize somewhat, this can be mitigated by using draco compression.
+Note: You can use as few LODs as you like, or none at all, but keep in mind certain properties require LOD0 at minimum, such as ``vircadia_lod_hide``
+
+
+
+### Draco Compression
+
+Draco Compression shrinks the size of 3D models and make them faster to share or download, without obvious visual quality loss. This can typically be enabled during the GLTF export process in your 3D Editor.
+
+
 
 ### Properties
 
@@ -32,8 +58,6 @@ In your glTF extras properties, use the properties to configure LOD settings, ov
 
 For more information on how our LOD works, see Babylon.js' [documentation](https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD) on LOD.
 In [Blender](https://www.blender.org/), add these properties in the "Object" tab under "Custom Properties."
-
-
 
 #### Automatic Generation
 
@@ -72,7 +96,7 @@ Property `vircadia_billboard_mode`:
 
 - `x, y, z, all`or `none` *default*
 
-With billboarding an object will always face the specified direction. This is especially useful on low detail LODs to create a "cardboard cutout" that always faces the camera
+With billboarding an object will always face the specified direction. This is especially useful on low detail LODs to create a "cardboard cutout" that always faces the camera. This is often used on the highest numbered LOD on trees and other foliage, but is not required.
 
 #### Hide
 
@@ -81,7 +105,14 @@ property  `vircadia_lod_hide`
 - `0` to `100000` in meters.
 
 Specifies the distance at which the object is culled completely (*optional*).
-Note: this propery must be added to LOD0 to take effect.
+Note: this property must be added to LOD0 to take effect.
+
+### Collisions
+
+It is highly recommended to make your own simplified collision meshes rather than using the fully detailed models, as this uses significant computing power.  Collisions can be enable/disabled on a model via the Collision tab of the Properties panel within the Create Tools of the Native Client.
+
+
+Note: Remember to "hide" your collision mesh to keep it from being rendered.
 
 # Asset Hosting
 
