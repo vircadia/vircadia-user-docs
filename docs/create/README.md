@@ -6,7 +6,7 @@ slug: /create
 # Creating with Vircadia
 
 For the time being, content/models are created externally in software packages like [Blender](https://www.blender.org/) and positioned in 3d space using the Vircadia Native Client. Found [here](https://github.com/vircadia/vircadia-native-core/releases/download/2022.1.2/Vircadia-2022.1.2-6791899-Selene.exe)
-Note: Objects using draco compression will not be rendered in the natve client but can still be positioned by selecting them in the entity list.
+Note: Objects using draco compression will not be rendered in the Native Client but can still be positioned by selecting them in the entity list.
 
 # Asset Creation
 
@@ -44,13 +44,9 @@ Take advantage of LOD (by appending the following suffixes to your meshes' name:
 LODs are a great way to lower the onscreen polygon count as objects get farther from the camera.  This is done by switching to simplified models at a specified distance or size. While this does increase the filesize somewhat, this can be mitigated by using draco compression.
 Note: You can use as few LODs as you like, or none at all, but keep in mind certain properties require LOD0 at minimum, such as ``vircadia_lod_hide``
 
-
-
 ### Draco Compression
 
 Draco Compression shrinks the size of 3D models and make them faster to share or download, without obvious visual quality loss. This can typically be enabled during the GLTF export process in your 3D Editor.
-
-
 
 ### Properties
 
@@ -82,7 +78,7 @@ Property `vircadia_lod_distance`:
 
 * `0` to `100000` in meters.
 
-Defaults are ...
+Defaults are LOD0: 0, LOD1: 15, LOD2: 30, LOD3: 60, LOD4: 120
 
 #### Size
 
@@ -110,7 +106,6 @@ Note: this property must be added to LOD0 to take effect.
 ### Collisions
 
 It is highly recommended to make your own simplified collision meshes rather than using the fully detailed models, as this uses significant computing power.  Collisions can be enable/disabled on a model via the Collision tab of the Properties panel within the Create Tools of the Native Client.
-
 
 Note: Remember to "hide" your collision mesh to keep it from being rendered.
 
